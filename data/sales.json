@@ -1,0 +1,46 @@
+[
+  {
+    "id": "a008cc0a-f03f-466c-a995-ffacaf2f3c01",
+    "drop_id": "a0936eef-c1d9-4c38-b3a0-3fee829c177c",
+    "sale_price": 150000,
+    "fee_percent": 5,
+    "fee_amount": 7500,
+    "net_amount": 142500,
+    "sale_date": "2026-01-07",
+    "platform": "Facebook",
+    "created_at": "2026-01-07T13:59:18.857Z"
+  },
+  {
+    "id": "6bb5b9aa-6f1b-4d41-aed7-db068e2103b0",
+    "drop_id": "b1664764-9ce1-4116-b3a0-13b3f6f089d0",
+    "sale_price": 50000,
+    "fee_percent": 5,
+    "fee_amount": 2500,
+    "net_amount": 47500,
+    "sale_date": "2026-01-02",
+    "platform": "In-game",
+    "created_at": "2026-01-02T13:59:18.857Z"
+  },
+  {
+    "drop_id": "8cf3fc82-9ca2-4f6c-83c9-be76d02796fb",
+    "sale_price": 5000,
+    "fee_percent": 5,
+    "sale_date": "2026-01-08",
+    "platform": null,
+    "fee_amount": 250,
+    "net_amount": 4750,
+    "id": "9f192b41-84b0-44fd-800d-cc345cbe451f",
+    "created_at": "2026-01-08T14:36:14.150Z"
+  },
+  {
+    "drop_id": "8edc6aa2-9489-471a-ab42-86fff4b80872",
+    "sale_price": 3000,
+    "fee_percent": 2,
+    "sale_date": "2026-01-08",
+    "platform": null,
+    "fee_amount": 60,
+    "net_amount": 2940,
+    "id": "bfc2ac12-d222-4d27-a3f9-a65dae089f0d",
+    "created_at": "2026-01-08T14:46:35.767Z"
+  }
+]

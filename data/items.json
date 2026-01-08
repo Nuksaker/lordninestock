@@ -1,0 +1,65 @@
+[
+  {
+    "id": "4bf9486c-3466-4c02-b425-36ffb08c3d03",
+    "name": "ทักษะ เอาชนะ",
+    "category": "Skill",
+    "sub_type": "Combat",
+    "tradeable": true,
+    "note": "สกิลหายาก",
+    "created_at": "2025-12-09T13:59:18.856Z"
+  },
+  {
+    "id": "ca74253e-47f4-4c95-b641-dd7ed7ff6c91",
+    "name": "หินประดับม่วง x100",
+    "category": "Material",
+    "sub_type": "Gem",
+    "tradeable": true,
+    "note": null,
+    "created_at": "2025-12-11T13:59:18.856Z"
+  },
+  {
+    "id": "e46aba2f-0b85-48af-885e-4f76590bd52a",
+    "name": "ดาบโล่ รุ่งอรุณ",
+    "category": "Weapon",
+    "sub_type": "Sword",
+    "tradeable": true,
+    "note": "อาวุธระดับ S",
+    "created_at": "2025-12-14T13:59:18.856Z"
+  },
+  {
+    "id": "e74e15ed-a462-47b7-8749-8661d01b560c",
+    "name": "อาน เดลโฟน",
+    "category": "Mount",
+    "sub_type": "Horse",
+    "tradeable": true,
+    "note": "พาหนะหายาก",
+    "created_at": "2025-12-17T13:59:18.856Z"
+  },
+  {
+    "id": "5933e25a-c8c0-4c4e-a630-2cd7d4256448",
+    "name": "ชุดเกราะมังกร",
+    "category": "Armor",
+    "sub_type": "Heavy",
+    "tradeable": true,
+    "note": null,
+    "created_at": "2025-12-19T13:59:18.856Z"
+  },
+  {
+    "id": "b45841f3-b20b-4c75-8aa4-0b95194b58a5",
+    "name": "แหวนพลังเวทย์",
+    "category": "Accessory",
+    "sub_type": "Ring",
+    "tradeable": true,
+    "note": null,
+    "created_at": "2025-12-21T13:59:18.856Z"
+  },
+  {
+    "id": "b1416a2d-f3bb-4ef2-861c-e30ae74efe2d",
+    "name": "คริสตัลสีทอง",
+    "category": "Special",
+    "sub_type": null,
+    "tradeable": false,
+    "note": "ไอเทมกิจกรรม ห้ามขาย",
+    "created_at": "2025-12-24T13:59:18.856Z"
+  }
+]

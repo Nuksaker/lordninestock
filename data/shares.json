@@ -1,0 +1,112 @@
+[
+  {
+    "id": "e1f10768-d332-4bc9-8643-51294403b2a8",
+    "drop_id": "a0936eef-c1d9-4c38-b3a0-3fee829c177c",
+    "player_id": "4e64113f-092c-40bd-9b86-2710b7be547d",
+    "share_type": "AUTO",
+    "percent": 25,
+    "amount": 35625,
+    "paid_status": "PAID",
+    "remark": null,
+    "created_at": "2026-01-07T13:59:18.858Z"
+  },
+  {
+    "id": "fd0a1c23-5c3f-4673-8596-77f67e8cd396",
+    "drop_id": "a0936eef-c1d9-4c38-b3a0-3fee829c177c",
+    "player_id": "989af77c-77af-4602-a1f5-ab29528b49e4",
+    "share_type": "AUTO",
+    "percent": 25,
+    "amount": 35625,
+    "paid_status": "PAID",
+    "remark": null,
+    "created_at": "2026-01-07T13:59:18.858Z"
+  },
+  {
+    "id": "0f0754b7-bf28-4587-835d-84c673b86c19",
+    "drop_id": "a0936eef-c1d9-4c38-b3a0-3fee829c177c",
+    "player_id": "8d2d55af-8bbc-40c5-a9ba-e890d7cdff13",
+    "share_type": "AUTO",
+    "percent": 25,
+    "amount": 35625,
+    "paid_status": "PAID",
+    "remark": null,
+    "created_at": "2026-01-07T13:59:18.858Z"
+  },
+  {
+    "id": "48eee448-44d2-4387-b7cc-fa6e8668955f",
+    "drop_id": "a0936eef-c1d9-4c38-b3a0-3fee829c177c",
+    "player_id": "f8144e0f-2963-4cbc-8e55-6294a1b02dec",
+    "share_type": "AUTO",
+    "percent": 25,
+    "amount": 35625,
+    "paid_status": "PAID",
+    "remark": null,
+    "created_at": "2026-01-07T13:59:18.858Z"
+  },
+  {
+    "drop_id": "8cf3fc82-9ca2-4f6c-83c9-be76d02796fb",
+    "player_id": "989af77c-77af-4602-a1f5-ab29528b49e4",
+    "share_type": "AUTO",
+    "percent": 5,
+    "amount": 237.5,
+    "paid_status": "PAID",
+    "remark": null,
+    "id": "f738059e-2bb8-4265-aa0e-57210ef9149d",
+    "created_at": "2026-01-08T14:36:31.973Z"
+  },
+  {
+    "drop_id": "8edc6aa2-9489-471a-ab42-86fff4b80872",
+    "player_id": "add2fec5-2fd0-4484-851b-43a97a11977f",
+    "share_type": "AUTO",
+    "percent": 20,
+    "amount": 588,
+    "paid_status": "WAIT",
+    "remark": null,
+    "id": "09dbe540-daca-4249-a4da-88d38d267862",
+    "created_at": "2026-01-08T14:48:25.256Z"
+  },
+  {
+    "drop_id": "8edc6aa2-9489-471a-ab42-86fff4b80872",
+    "player_id": "8d2d55af-8bbc-40c5-a9ba-e890d7cdff13",
+    "share_type": "AUTO",
+    "percent": 20,
+    "amount": 588,
+    "paid_status": "WAIT",
+    "remark": null,
+    "id": "82c84ec5-9d54-4b6b-90d5-787711b1e622",
+    "created_at": "2026-01-08T14:48:25.270Z"
+  },
+  {
+    "drop_id": "8edc6aa2-9489-471a-ab42-86fff4b80872",
+    "player_id": "f8144e0f-2963-4cbc-8e55-6294a1b02dec",
+    "share_type": "AUTO",
+    "percent": 20,
+    "amount": 588,
+    "paid_status": "WAIT",
+    "remark": null,
+    "id": "70a99b3c-1b17-45e0-9578-f33ab2239a56",
+    "created_at": "2026-01-08T14:48:25.292Z"
+  },
+  {
+    "drop_id": "8edc6aa2-9489-471a-ab42-86fff4b80872",
+    "player_id": "989af77c-77af-4602-a1f5-ab29528b49e4",
+    "share_type": "AUTO",
+    "percent": 20,
+    "amount": 588,
+    "paid_status": "WAIT",
+    "remark": null,
+    "id": "f9a32a99-7d9f-4734-9ec6-3d0cbccfc15b",
+    "created_at": "2026-01-08T14:48:25.309Z"
+  },
+  {
+    "drop_id": "8edc6aa2-9489-471a-ab42-86fff4b80872",
+    "player_id": "4e64113f-092c-40bd-9b86-2710b7be547d",
+    "share_type": "AUTO",
+    "percent": 20,
+    "amount": 588,
+    "paid_status": "WAIT",
+    "remark": null,
+    "id": "744ee4ca-e010-48cd-8a28-453002c2b28d",
+    "created_at": "2026-01-08T14:48:25.323Z"
+  }
+]

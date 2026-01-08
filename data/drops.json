@@ -1,0 +1,74 @@
+[
+  {
+    "id": "a0936eef-c1d9-4c38-b3a0-3fee829c177c",
+    "drop_date": "2026-01-06",
+    "item_id": "4bf9486c-3466-4c02-b425-36ffb08c3d03",
+    "boss_id": "112faf6b-843a-4f1e-b612-8fd454086fdd",
+    "quantity": 1,
+    "participant_count": 31,
+    "drop_status": "DROPPED",
+    "finance_status": "PAID",
+    "note": "ดรอปจากบอสวันนี้",
+    "created_at": "2026-01-06T13:59:18.857Z"
+  },
+  {
+    "id": "800a7cc3-b5e1-466e-8b0d-14951582588c",
+    "drop_date": "2026-01-03",
+    "item_id": "e74e15ed-a462-47b7-8749-8661d01b560c",
+    "boss_id": "ea099122-de69-4b55-977e-07c2adcf15c6",
+    "quantity": 1,
+    "participant_count": 25,
+    "drop_status": "DROPPED",
+    "finance_status": "PERSONAL",
+    "note": "mrzero เก็บไว้ใช้เอง",
+    "created_at": "2026-01-03T13:59:18.857Z"
+  },
+  {
+    "id": "b1664764-9ce1-4116-b3a0-13b3f6f089d0",
+    "drop_date": "2026-01-01",
+    "item_id": "ca74253e-47f4-4c95-b641-dd7ed7ff6c91",
+    "boss_id": "c89de221-63cf-4253-b9ea-f2c9a7be81b9",
+    "quantity": 1,
+    "participant_count": 42,
+    "drop_status": "DROPPED",
+    "finance_status": "PAID",
+    "note": null,
+    "created_at": "2026-01-01T13:59:18.857Z"
+  },
+  {
+    "id": "828553db-4bf6-4307-a9ac-3f03f6b14133",
+    "drop_date": "2025-12-29",
+    "item_id": "5933e25a-c8c0-4c4e-a630-2cd7d4256448",
+    "boss_id": "e9de5d29-ec50-4648-9f98-21ce80e85d73",
+    "quantity": 1,
+    "participant_count": 35,
+    "drop_status": "NOT_DROPPED",
+    "finance_status": "WAIT",
+    "note": "ไม่ดรอป รอรอบหน้า",
+    "created_at": "2025-12-29T13:59:18.857Z"
+  },
+  {
+    "drop_date": "2026-01-08",
+    "item_id": "b1416a2d-f3bb-4ef2-861c-e30ae74efe2d",
+    "boss_id": null,
+    "quantity": 1,
+    "participant_count": 4,
+    "drop_status": "DROPPED",
+    "finance_status": "PAID",
+    "note": null,
+    "id": "8cf3fc82-9ca2-4f6c-83c9-be76d02796fb",
+    "created_at": "2026-01-08T14:35:55.779Z"
+  },
+  {
+    "drop_date": "2026-01-08",
+    "item_id": "5933e25a-c8c0-4c4e-a630-2cd7d4256448",
+    "boss_id": null,
+    "quantity": 2,
+    "participant_count": 30,
+    "drop_status": "DROPPED",
+    "finance_status": "WAIT",
+    "note": null,
+    "id": "8edc6aa2-9489-471a-ab42-86fff4b80872",
+    "created_at": "2026-01-08T14:46:14.484Z"
+  }
+]

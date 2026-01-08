@@ -1,0 +1,52 @@
+[
+  {
+    "id": "4e64113f-092c-40bd-9b86-2710b7be547d",
+    "name": "mrzero",
+    "discord_id": "mrzero#1234",
+    "role": "ADMIN",
+    "active": true,
+    "created_at": "2025-12-09T13:59:18.856Z"
+  },
+  {
+    "id": "989af77c-77af-4602-a1f5-ab29528b49e4",
+    "name": "benzboss",
+    "discord_id": "benzboss#5678",
+    "role": "MEMBER",
+    "active": true,
+    "created_at": "2025-12-11T13:59:18.856Z"
+  },
+  {
+    "id": "8d2d55af-8bbc-40c5-a9ba-e890d7cdff13",
+    "name": "whiro",
+    "discord_id": "whiro#9012",
+    "role": "MEMBER",
+    "active": true,
+    "created_at": "2025-12-14T13:59:18.856Z"
+  },
+  {
+    "id": "f8144e0f-2963-4cbc-8e55-6294a1b02dec",
+    "name": "Blue16Alpha",
+    "discord_id": "Blue16Alpha#3456",
+    "role": "MEMBER",
+    "active": true,
+    "created_at": "2025-12-19T13:59:18.856Z"
+  },
+  {
+    "id": "add2fec5-2fd0-4484-851b-43a97a11977f",
+    "name": "DragonSlayer",
+    "discord_id": null,
+    "role": "MEMBER",
+    "active": true,
+    "created_at": "2025-12-24T13:59:18.856Z",
+    "username": "DragonSlayer",
+    "password": "12345678"
+  },
+  {
+    "id": "f8b67293-9038-403d-bf26-97d219ebcce5",
+    "name": "NightWolf",
+    "discord_id": "NightWolf#7890",
+    "role": "MEMBER",
+    "active": false,
+    "created_at": "2025-11-29T13:59:18.856Z"
+  }
+]
