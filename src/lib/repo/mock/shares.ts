@@ -69,7 +69,28 @@ export const sharesRepo: SharesRepo = {
     });
   },
 
-  async listByDropId(dropId: string): Promise<Share[]> {
+  async listByDropId(dropId: string): Promise<any[]> {
     return this.list({ filter: { drop_id: dropId } });
+  },
+
+  async removeByDropId(dropId: string): Promise<boolean> {
+    return withLock(FILENAME, async () => {
+      const items = await readJsonFile<Share>(FILENAME);
+      const filtered = items.filter(s => s.drop_id !== dropId);
+      if (filtered.length === items.length) return false;
+      await writeJsonFile(FILENAME, filtered);
+      return true;
+    });
+  },
+
+  async getStats(playerId?: string): Promise<{ totalAmount: number; unpaidAmount: number; paidAmount: number }> {
+    const items = await readJsonFile<Share>(FILENAME);
+    const filtered = playerId ? items.filter(s => s.player_id === playerId) : items;
+    
+    return filtered.reduce((acc, s) => ({
+      totalAmount: acc.totalAmount + s.amount,
+      unpaidAmount: acc.unpaidAmount + (s.paid_status === 'WAIT' ? s.amount : 0),
+      paidAmount: acc.paidAmount + (s.paid_status === 'PAID' ? s.amount : 0),
+    }), { totalAmount: 0, unpaidAmount: 0, paidAmount: 0 });
   },
 };

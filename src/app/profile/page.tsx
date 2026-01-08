@@ -6,7 +6,7 @@ import { useAuth } from '@/hooks/useAuth';
 import { useRouter } from 'next/navigation';
 
 export default function ProfilePage() {
-  const { user, refreshUser } = useAuth(); // Assuming refreshUser exists or we just rely on session
+  const { user, checkAuth } = useAuth();
   const { showToast } = useToast();
   const router = useRouter();
 
@@ -76,8 +76,8 @@ export default function ProfilePage() {
         throw new Error(error.error || 'Failed to update');
       }
 
-      showToast('เบนทึกข้อมูลสำเร็จ', 'success');
-      // refreshUser?.(); // If available
+      showToast('บันทึกข้อมูลสำเร็จ', 'success');
+      checkAuth?.();
     } catch (err: any) {
       showToast(err.message, 'error');
     } finally {

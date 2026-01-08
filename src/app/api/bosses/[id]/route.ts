@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { bossesRepo } from '@/lib/repo';
 import { updateBossSchema } from '@/lib/validators';
+import { authorizeAdmin } from '@/lib/rbac';
 
 type RouteContext = { params: Promise<{ id: string }> };
 
@@ -28,13 +29,18 @@ export async function GET(request: Request, context: RouteContext) {
 
 export async function PUT(request: Request, context: RouteContext) {
   try {
+    const isAdmin = await authorizeAdmin();
+    if (!isAdmin) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 403 });
+    }
+
     const { id } = await context.params;
     const body = await request.json();
     
     const result = updateBossSchema.safeParse(body);
     if (!result.success) {
       return NextResponse.json(
-        { error: result.error.errors[0].message },
+        { error: result.error.issues[0].message },
         { status: 400 }
       );
     }
@@ -58,6 +64,11 @@ export async function PUT(request: Request, context: RouteContext) {
 
 export async function DELETE(request: Request, context: RouteContext) {
   try {
+    const isAdmin = await authorizeAdmin();
+    if (!isAdmin) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 403 });
+    }
+
     const { id } = await context.params;
     
     const deleted = await bossesRepo.remove(id);

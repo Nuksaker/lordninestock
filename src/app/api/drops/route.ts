@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { dropsRepo, itemsRepo, bossesRepo, salesRepo } from '@/lib/repo';
 import { createDropSchema } from '@/lib/validators';
 import { notifyNewDrop } from '@/lib/discord';
+import { authorizeAdmin } from '@/lib/rbac';
 
 export async function GET(request: Request) {
   try {
@@ -44,12 +45,17 @@ export async function GET(request: Request) {
 
 export async function POST(request: Request) {
   try {
+    const isAdmin = await authorizeAdmin();
+    if (!isAdmin) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 403 });
+    }
+
     const body = await request.json();
     
     const result = createDropSchema.safeParse(body);
     if (!result.success) {
       return NextResponse.json(
-        { error: result.error.errors[0].message },
+        { error: result.error.issues[0].message },
         { status: 400 }
       );
     }

@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { playersRepo } from '@/lib/repo';
 import { createPlayerSchema } from '@/lib/validators';
 import bcrypt from 'bcryptjs';
+import { authorizeAdmin } from '@/lib/rbac';
 
 export async function GET(request: Request) {
   try {
@@ -31,13 +32,18 @@ export async function GET(request: Request) {
 
 export async function POST(request: Request) {
   try {
+    const isAdmin = await authorizeAdmin();
+    if (!isAdmin) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 403 });
+    }
+
     const body = await request.json();
     
     const result = createPlayerSchema.safeParse(body);
     if (!result.success) {
       console.error('Validation Error:', result.error);
       const formatted = result.error.format();
-      const errorMessage = result.error.errors?.[0]?.message || 'ข้อมูลไม่ถูกต้อง';
+      const errorMessage = result.error.issues?.[0]?.message || 'ข้อมูลไม่ถูกต้อง';
       
       // Construct a more detailed error message
       const details = Object.entries(formatted)

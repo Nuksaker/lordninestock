@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { dropsRepo, sharesRepo, playersRepo, salesRepo } from '@/lib/repo';
 import { createShareSchema } from '@/lib/validators';
 import { notifyDividend } from '@/lib/discord';
+import { authorizeAdmin } from '@/lib/rbac';
 
 type RouteContext = { params: Promise<{ id: string }> };
 
@@ -40,6 +41,11 @@ export async function GET(request: Request, context: RouteContext) {
 
 export async function POST(request: Request, context: RouteContext) {
   try {
+    const isAdmin = await authorizeAdmin();
+    if (!isAdmin) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 403 });
+    }
+
     const { id } = await context.params;
     const body = await request.json();
     
@@ -108,7 +114,7 @@ export async function POST(request: Request, context: RouteContext) {
     const result = createShareSchema.safeParse({ ...body, drop_id: id });
     if (!result.success) {
       return NextResponse.json(
-        { error: result.error.errors[0].message },
+        { error: result.error.issues[0].message },
         { status: 400 }
       );
     }

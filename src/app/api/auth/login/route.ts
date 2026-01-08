@@ -12,8 +12,7 @@ export async function POST(request: Request) {
     const result = loginSchema.safeParse(body);
     if (!result.success) {
       return NextResponse.json(
-        // @ts-ignore
-        { error: result.error.errors[0].message },
+        { error: result.error.issues[0].message },
         { status: 400 }
       );
     }
